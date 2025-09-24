@@ -1,0 +1,1 @@
+import sys; print("Python executable:", sys.executable); import cv2; print("OpenCV version:", cv2.__version__); import numpy; print("NumPy version:", numpy.__version__); import mediapipe; print("MediaPipe version:", mediapipe.__version__); from PIL import Image; print("PIL version:", Image.__version__); print("All imports successful!")

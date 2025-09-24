@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Driver Monitoring System - GUI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/gui/main_gui.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${workspaceFolder}/utils:${workspaceFolder}/gui"
+            }
+        },
+        {
+            "name": "Driver Monitoring System - Console",
+            "type": "debugpy", 
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main_detector.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${workspaceFolder}/utils:${workspaceFolder}/gui"
+            }
+        },
+        {
+            "name": "Test System",
+            "type": "debugpy",
+            "request": "launch", 
+            "program": "${workspaceFolder}/test_system.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${workspaceFolder}/utils:${workspaceFolder}/gui"
+            }
+        }
+    ]
+}

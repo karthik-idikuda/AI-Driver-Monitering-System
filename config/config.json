@@ -1,0 +1,89 @@
+{
+    "camera": {
+        "device_id": 0,
+        "resolution": [
+            640,
+            480
+        ],
+        "fps": 30,
+        "auto_exposure": true
+    },
+    "detection_settings": {
+        "drowsiness": {
+            "eye_aspect_ratio_threshold": 0.25,
+            "consecutive_frames": 20,
+            "enabled": true,
+            "alert_sound": "data/alerts/drowsiness_alert.wav"
+        },
+        "distraction": {
+            "head_pose_threshold": 30,
+            "consecutive_frames": 15,
+            "enabled": true,
+            "alert_sound": "data/alerts/distraction_alert.wav"
+        },
+        "seatbelt": {
+            "confidence_threshold": 0.7,
+            "enabled": true,
+            "alert_sound": "data/alerts/seatbelt_alert.wav"
+        },
+        "attention": {
+            "gaze_threshold": 0.3,
+            "consecutive_frames": 10,
+            "enabled": true
+        },
+        "hand_position": {
+            "steering_wheel_region": [
+                200,
+                300,
+                400,
+                450
+            ],
+            "confidence_threshold": 0.6,
+            "min_hands_required": 1,
+            "enabled": true
+        },
+        "facial_recognition": {
+            "tolerance": 0.6,
+            "enabled": true
+        },
+        "emotion": {
+            "stress_threshold": 0.7,
+            "enabled": true
+        }
+    },
+    "models": {
+        "face_detection": "models/haarcascade_frontalface_default.xml",
+        "eye_detection": "models/haarcascade_eye.xml",
+        "landmarks": "models/shape_predictor_68_face_landmarks.dat",
+        "emotion_model": "models/emotion_model.h5",
+        "seatbelt_model": "models/seatbelt_detector.h5",
+        "hand_detection": "models/hand_landmarks.tflite"
+    },
+    "alerts": {
+        "sound_enabled": true,
+        "visual_alerts": true,
+        "log_alerts": true,
+        "alert_cooldown": 5.0
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "data/logs/driver_monitoring.log",
+        "max_file_size": 10485760
+    },
+    "gui": {
+        "window_title": "Driver Monitoring System",
+        "window_size": [
+            1200,
+            800
+        ],
+        "theme": "dark",
+        "show_fps": true,
+        "show_debug_info": false
+    },
+    "system": {
+        "auto_start_monitoring": false,
+        "save_video_recordings": false,
+        "recording_duration": 300,
+        "enable_remote_monitoring": false
+    }
+}

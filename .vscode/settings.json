@@ -1,0 +1,19 @@
+{
+    "python.defaultInterpreter": "./venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.autoComplete.extraPaths": [
+        "./src",
+        "./utils",
+        "./gui"
+    ],
+    "python.analysis.extraPaths": [
+        "./src",
+        "./utils", 
+        "./gui"
+    ],
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "files.associations": {
+        "*.py": "python"
+    }
+}
