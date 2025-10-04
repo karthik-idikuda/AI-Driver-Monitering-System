@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage*
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS/FS
+Thumbs.db
+
+# Project-specific runtime artifacts
+# data/logs/
+# data/recordings/
+# data/screenshots/
